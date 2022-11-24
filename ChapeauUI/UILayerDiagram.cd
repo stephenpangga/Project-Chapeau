@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ChapeauUI.BartenderForm" Collapsed="true">
+    <Position X="20" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GFWCCAAQRDABIAAIoBGgEAACICAQMAAAAAICARKEAig=</HashCode>
+      <FileName>BartenderForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Orders" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ChapeauUI.BaseForm" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACIQAAACoAAAAAACCAAQEDEAAAIAAAAAACEAAAAAA=</HashCode>
+      <FileName>BaseForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChapeauUI.ChefForm" Collapsed="true">
+    <Position X="18" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GFWCCAAQRDABIAAIoACgAAACICAQMAAAAAICABKEAig=</HashCode>
+      <FileName>ChefForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Orders" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ChapeauUI.LoginForm" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgBAAgAACAAIAAAAACAAAACQAAAAAAiAACAAAAAAAA=</HashCode>
+      <FileName>LoginForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="EmployeeDB" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ChapeauUI.OrderForm" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQABAIAACRgCBPBQACBEEACCQRCCRECQEEAAARAAgQ=</HashCode>
+      <FileName>OrderForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="menuItemDB" />
+      <Field Name="menuCategoryDB" />
+      <Field Name="tableDB" />
+      <Field Name="table" />
+      <Field Name="orderDB" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ChapeauUI.OrderOptionForm" Collapsed="true">
+    <Position X="13.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IABQBOABQCQIAAgAAGCAJACSAAAAAAAAiEAABAAEABA=</HashCode>
+      <FileName>OrderOptionForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="menuItemDB" />
+      <Field Name="payment" />
+      <Field Name="order" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ChapeauUI.PaymentForm" Collapsed="true">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <AssociationLine Name="payment" Type="ChapeauLogic.OrderService" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.312" Y="2.441" />
+        <Point X="7.312" Y="8.687" />
+        <Point X="9.042" Y="8.687" Type="JumpStart" />
+        <Point X="9.208" Y="8.687" Type="JumpEnd" />
+        <Point X="9.635" Y="8.687" Type="JumpStart" />
+        <Point X="9.802" Y="8.687" Type="JumpEnd" />
+        <Point X="11.823" Y="8.687" Type="JumpStart" />
+        <Point X="11.99" Y="8.687" Type="JumpEnd" />
+        <Point X="13.917" Y="8.687" Type="JumpStart" />
+        <Point X="14.083" Y="8.687" Type="JumpEnd" />
+        <Point X="14.323" Y="8.687" Type="JumpStart" />
+        <Point X="14.49" Y="8.687" Type="JumpEnd" />
+        <Point X="17.5" Y="8.687" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>IAAAjBgBCCAFIpCAAICAAYqKAhARIGAKAUBIAHDKAAQ=</HashCode>
+      <FileName>PaymentForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="menuItemDB" />
+      <Field Name="payment" />
+      <Field Name="order" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ChapeauUI.TableViewForm" Collapsed="true">
+    <Position X="2.5" Y="1.75" Width="2.5" />
+    <AssociationLine Name="orderMenuItemDB" Type="ChapeauLogic.OrderMenuItemService" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.234" Y="2.441" />
+        <Point X="3.234" Y="2.816" />
+        <Point X="3.25" Y="2.816" />
+        <Point X="3.25" Y="5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>NABAQAJEBaAE4GQCASyAgACCwEBCACAAQgE0AkDAQgs=</HashCode>
+      <FileName>TableViewForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="diningTableDB" />
+      <Field Name="orderMenuItemDB" />
+      <Field Name="orderDB" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ChapeauLogic.DiningTableService">
+    <Position X="3.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ChapeauLogic.EmployeeService" Collapsed="true">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ChapeauLogic.MenuCategoryService" Collapsed="true">
+    <Position X="10" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ChapeauLogic.MenuItemService">
+    <Position X="6" Y="9" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ChapeauLogic.OrderMenuItemService" Collapsed="true">
+    <Position X="2.5" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ChapeauLogic.OrderService">
+    <Position X="17.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ChapeauModel.Order" Collapsed="true">
+    <Position X="16" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ChapeauModel.DiningTable">
+    <Position X="10.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
